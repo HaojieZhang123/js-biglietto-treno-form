@@ -1,20 +1,25 @@
 // creation of variables
-const distance = document.getElementById("distance").value;
-const age = document.getElementById("age").value;
+const form = document.querySelector("form");
 const button = document.getElementById("button");
 const price = 0.21;
 
-button.addEventListener("click", function() {
+form.addEventListener("submit", function(event) {
+    
+    event.preventDefault();
+    
+    // distance and age moved inside the event listener to allow it to be updated
+    const distance = document.getElementById("distance").value;
+    const age = document.getElementById("age").value;
     const total = (distance * price).toFixed(2);
-    let finalPrice = 0;
+    let finalPrice;
 
     if (age < 18) {
-        finalPrice = total * 0.8;
+        finalPrice = (total * 0.8).toFixed(2);
     } else if (age > 65) {
-        finalPrice = total * 0.6;
+        finalPrice = (total * 0.6).toFixed(2);
     } else {
         finalPrice = total;
     }
 
-    console.log(finalPrice);
+    alert("Il prezzo del tuo biglietto è di: " + finalPrice + "€");
 });
