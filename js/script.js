@@ -34,12 +34,12 @@ form.addEventListener("submit", function(event) {
     }
 
     if(AR === "AR"){
-        finalPrice = finalPrice * 2;
+        finalPrice = (finalPrice * 2).toFixed(2);
     }
 
     let finalDistance = distance;
     if(AR === "AR"){
-        finalDistance = (distance * 2).toFixed(2);
+        finalDistance = distance * 2;
     }
 
     nameRecap.innerHTML = name;
