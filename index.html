@@ -131,22 +131,30 @@
             <div class="container d-flex align-center justify-center"> 
                 <div class="col-50 d-flex justify-center">
                     <div class="ticket-recap d-flex flex-wrap align-center justify-center">
-                        <h2 class="col-100">Il tuo biglietto</h2>
+                        <div class="card-header">
+                            <h2 class="col-100">
+                                <i class="fa-solid fa-ticket"></i>
+                                Il tuo biglietto
+                            </h2>
+                        </div>
+
+                        <div class="card-body d-flex flex-wrap align-center justify-center">
+                            <div class="col-50">
+                                <p>Nome: <span id="name-recap"></span></p>
+                                <p>Et&agrave;: <span id="age-recap"></span></p>
+                                <p>Sesso: <span id="gender-recap"></span></p>
+                            </div>
+        
+                            <div class="col-50">
+                                <p>Distanza: <span id="distance-recap"></span> km</p>
+                                <p>A-R: <span id="AR-recap"></span></p>
+                                <p>Prezzo: <span id="price-recap"></span> €</p>
+                            </div>
+                            <div class="col-100 d-flex justify-center">
+                                <img src="./img/frame.png" alt="QR">
+                            </div>
+                        </div>
                         
-                        <div class="col-50">
-                            <p>Nome: <span id="name-recap"></span></p>
-                            <p>Et&agrave;: <span id="age-recap"></span></p>
-                            <p>Sesso: <span id="gender-recap"></span></p>
-                        </div>
-    
-                        <div class="col-50">
-                            <p>Distanza: <span id="distance-recap"></span> km</p>
-                            <p>A-R: <span id="AR-recap"></span></p>
-                            <p>Prezzo: <span id="price-recap"></span> €</p>
-                        </div>
-                        <div class="col-100 d-flex justify-center">
-                            <img src="./img/frame.png" alt="QR">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -155,6 +163,11 @@
     </main>
 
     <footer>
+
+        <div class="container">
+            <div class="col-30"></div>
+            <div class="col-70"></div>
+        </div>
 
     </footer>
     
