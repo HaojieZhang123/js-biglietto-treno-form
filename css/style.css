@@ -137,6 +137,7 @@ header {
 .left-header img {
     max-width: 100%;
     max-height: 100%;
+    min-width: 200px;
 }
 
 .header-menu-item {
@@ -150,7 +151,7 @@ header {
 }
 
 .header-menu img {
-    width: 100%;
+    width: 30px;
     max-height: 80%;
     margin: 0 5px;
 }
@@ -164,7 +165,7 @@ header {
 
 /* JUMBO */
 .jumbo {
-    height: 600px;
+    padding: 30px 0;
     background-color: blue;
 }
 
@@ -223,6 +224,11 @@ header {
     margin: 10px 0;
     padding: 0 10px;
     color: #CCC;
+}
+.disclaimer{
+    margin: 100px 0;
+    padding: 0 10px;
+    color: white;
 }
 
 /* recap card */
@@ -310,4 +316,31 @@ footer .address{
 .ticket-recap:hover{
     transform: scale(1.05);
     transition: transform 0.5s;
+}
+
+/* media query */
+@media screen and (max-width: 1200px){
+    .hide-tablet{
+        display: none;
+    }
+    .jumbo-container > .col-40, .ticket-container > .container > .col-50{
+        width: 60%;
+        min-width: 500px;
+    }
+    .jumbo-container > .col-60{
+        width: 100%;
+        order: -1;
+    }
+    .jumbo-container > .col-60 > .disclaimer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 769px){
+    .hide-mobile{
+        display: none;
+    }
+    .jumbo-container > .col-40, .ticket-container > .container > .col-50{
+        width: 80%
+    }
 }
