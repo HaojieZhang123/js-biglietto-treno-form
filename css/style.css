@@ -121,6 +121,9 @@ h2 {
 header {
     height: 80px;
     padding: 0 20px;
+    position: sticky;
+    top: 0;
+    background-color: #FFF;
 }
 
 .left-header,
@@ -275,6 +278,18 @@ header {
     width: 70%;
     max-height: 100%;
     margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #F8FAFA;
+}
+footer .footer-logo{
+    width: 100%;
+}
+footer .address{
+    margin-left: 60px;
+    margin-bottom: 40px;
 }
 
 /* Animations */
