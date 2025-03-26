@@ -3,7 +3,12 @@ const form = document.querySelector("form");
 const button = document.getElementById("button");
 const price = 0.21;
 
-
+const nameRecap = document.getElementById("name-recap");
+const distanceRecap = document.getElementById("distance-recap");
+const ageRecap = document.getElementById("age-recap");
+const genderRecap = document.getElementById("gender-recap");
+const ARRecap = document.getElementById("AR-recap");
+const priceRecap = document.getElementById("price-recap");
 
 form.addEventListener("submit", function(event) {
     
@@ -12,7 +17,11 @@ form.addEventListener("submit", function(event) {
     // distance and age moved inside the event listener to allow it to be updated
     const distance = document.getElementById("distance").value;
     const age = document.getElementById("age").value;
-    console.log(AR);
+    
+    const name = document.getElementById("name").value;
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    const AR = document.querySelector('input[name="A-R"]:checked').value;
+
     const total = (distance * price).toFixed(2);
     let finalPrice;
 
@@ -24,9 +33,19 @@ form.addEventListener("submit", function(event) {
         finalPrice = total;
     }
 
-    if(AR === "andata-ritorno"){
+    if(AR === "AR"){
         finalPrice = finalPrice * 2;
     }
 
-    alert("Il prezzo del tuo biglietto è di: " + finalPrice + "€");
+    let finalDistance = distance;
+    if(AR === "AR"){
+        finalDistance = (distance * 2).toFixed(2);
+    }
+
+    nameRecap.innerHTML = name;
+    distanceRecap.innerHTML = finalDistance;
+    ageRecap.innerHTML = age;
+    genderRecap.innerHTML = gender;
+    ARRecap.innerHTML = AR;
+    priceRecap.innerHTML = finalPrice;
 });
