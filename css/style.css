@@ -12,6 +12,12 @@ a{
     text-decoration: none;
     color: inherit;
 }
+h1{
+    font-size: 50px;
+    margin: 10px 0;
+    padding: 0 10px;
+    color: white;
+}
 
 /* containers and layout*/
 .container{
@@ -64,6 +70,12 @@ a{
 .justify-end{
     justify-content: flex-end;
 }
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
 .align-center{
     align-items: center;
 }
@@ -73,7 +85,9 @@ a{
 .align-end{
     align-items: flex-end;
 }
-
+.flex-wrap{
+    flex-wrap: wrap;
+}
 /* Page content */
 /* HEADER */
 header{
@@ -106,7 +120,87 @@ header{
 }
 .header-button{
     margin: 0 10px;
-    padding: 10px 15px;
-    background-color: #AAA;
+    padding: 10px 20px;
+    background-color: #DDD;
     border-radius: 30px;
+}
+
+/* JUMBO */
+.jumbo{
+    height: 500px;
+    background-color: blue;
+}
+.jumbo-container{
+    height: 100%;
+}
+.card{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 5px 20px #000;
+}
+#distance, #age, #name{
+    font-size: 1.5em;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #EEE;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: #EEE solid 1px;
+}
+.radio{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1.3em;
+}
+#button{
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #00A88F;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+.subtitle{
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 0 10px;
+    color: #CCC;
+}
+
+/* recap card */
+.ticket-recap{
+    background-color: #EEE;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 1px 5px 20px #000;
+}
+.ticket-recap p{
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+.ticket-recap div img{
+    width: 100%;
+    max-height: 100%;
+}
+
+/* Animations */
+.header-menu-item:hover{
+    background-color: #EEE;
 }

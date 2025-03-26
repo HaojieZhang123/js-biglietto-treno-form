@@ -78,12 +78,69 @@
             </div>
         </div>
     </header>
+
+    <main>
+
+        <div class="jumbo">
+            <div class="container jumbo-container d-flex align-center">
+                <div class="col-40">
+                    <div class="card">
+                        <form action="">
+                            <input type="text" id="distance" class="col-100" placeholder="Inserisci la distanza in km">
+                            <input type="text" id="age" class="col-100" placeholder="Inserisci la tua età">
+
+                            <input type="text" id="name" class="col-100" placeholder="Inserisci il tuo nome">
+
+                            <div class="col-100 d-flex justify-around">
+                                <div class="radio">
+                                    <input type="radio" name="gender" class="gender" value="M">
+                                    <label for="gender">Maschio</label> 
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="gender" class="gender" value="F"> 
+                                    <label for="gender">Femmina</label>
+                                </div>
+                            </div>
     
-    <form action="">
-        <input type="text" id="distance" placeholder="Inserisci la distanza in km">
-        <input type="text" id="age" placeholder="Inserisci la tua età">
-        <button id="button">Calcola</button>
-    </form>
+                            <button id="button">Calcola</button>
+                        </form>
+    
+                    </div>
+                </div>
+                <div class="col-60">
+                    <h1>Centinaia di treni e pullman al miglior prezzo garantito</h1>
+                    <p class="subtitle">Compara e prenota in una sola ricerca</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-100 d-flex justify-center">
+                <div class="ticket-recap d-flex flex-wrap align-center justify-center">
+                    <h2 class="col-100">Il tuo biglietto</h2>
+                    
+                    <div class="col-40">
+                        <p>Nome: <span id="name-recap"></span></p>
+                        <p>Sesso: <span id="gender-recap"></span></p>
+                    </div>
+
+                    <div class="col-40">
+                        <p>Distanza: <span id="distance-recap"></span></p>
+                        <p>Prezzo: <span id="price-recap"></span> €</p>
+                    </div>
+                    <div class="col-20">
+                        <img src="./img/frame.png" alt="QR">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
 
     <script src="./js/script.js"></script>
 </body>
